@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="author" content="Ainala Devi" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 40px;
+        background-color: white;
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        gap: 30px;
+      }
+
+      nav li a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+      }
+
+      .navbar {
+        background-color: #00bcfc;
+        padding: 20px 40px;
+      }
+
+      .login-btn a {
+        color: #00bcfc;
+        border: 1px solid #00bcfc;
+        text-decoration: none;
+        padding: 20px 40px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+
+      .hero {
+        background-image: url(banner-bg.jpg);
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: center;
+        padding: 100px 80px 180px;
+        margin: 0;
+      }
+
+      .hero-content h1 {
+        font-size: 55px;
+        line-height: 70px;
+        margin-top: 150px;
+      }
+
+      .hero-content p {
+        font-size: 20px;
+        line-height: 20px;
+      }
+
+      .hero-content span {
+        color: #00bcfc;
+      }
+
+      .hero-btns {
+        margin-top: 30px;
+      }
+
+      .btn1 {
+        color: white;
+        border: 1px solid white;
+        border-radius: 10px;
+        text-decoration: none;
+        padding: 10px 20px;
+      }
+
+      .btn2 {
+        color: white;
+        text-decoration: none;
+      }
+
+      .cards {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 100px;
+        gap: 25px;
+        position: relative;
+        bottom: -270px;
+      }
+
+      .card img {
+        border-radius: 15px;
+        width: 250px;
+        height: 180px;
+      }
+
+      .card1 {
+        border-radius: 50%;
+        padding: 30px 40px;
+        background-color: #00bcfc;
+      }
+
+      .card-details {
+        background-color: white;
+        color: black;
+        border: 1px solid white;
+        padding: 40px 20px;
+        border-radius: 15px;
+        text-align: left;
+        idth: 250px;
+        height: 180px;
+      }
+
+      .card-details h2 {
+        color: #00bcfc;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      .hero1 {
+        margin-top: 200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 80px;
+      }
+
+      .hero-content1 p {
+        color: #00bcfc;
+        font-size: 10px;
+      }
+
+      .hero-content1 h3 {
+        color: black;
+        margin-top: 5px;
+      }
+
+      .hero-content1 span {
+        color: #00bcfc;
+      }
+
+      .hero-data a {
+        color: white;
+        text-decoration: none;
+        background-color: #00bcfc;
+        border-radius: 15px;
+        padding: 10px 20px;
+      }
+
+      .hero-content2 {
+        display: flex;
+        gap: 20px;
+      }
+
+      .hero-data1 {
+        display: flex;
+        gap: 10px;
+      }
+
+      .hero-data1 p {
+        color: #00bcfc;
+      }
+
+      .hero-data1 span {
+        color: gray;
+      }
+      .image{
+        border-radius: 15px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+      .hero-btn{
+        text-decoration: none;
+        color: #00bcfc;
+        border: 1px solid #00bcfc;
+        margin-top: 20px;
+        background-color: white;
+        padding: 10px 10px;
+        border-radius: 15px;
+        
+      }
+      .hero2{
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .content1{
+        border: 1px solid gray;
+        background-color: white;
+        padding: 20px 20px;
+        border-radius: 15px;
+      }
+      .hero3 {
+        background-image: url(closed-bg.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 100px 80px 180px;
+      }
+      .hero-content3{
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <title>css flexbox</title>
+
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="logo.png" alt="logo" width="150" />
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="home"> HOME </a></li>
+          <li><a href="photos">PHOTOS & VIDEOS</a></li>
+          <li><a href="categories">CATEGORIES</a></li>
+          <li><a href="Users">USERS</a></li>
+        </ul>
+      </nav>
+      <div class="login-btn">
+        <a href="#"><img src="icon-03.png" alt="icon" />Sign in/Up</a>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>
+          Enter a World Of <span>Photos</span> & Amazing <br /><span
+            >Awards</span
+          >
+        </h1>
+        <br />
+        <hr />
+        <br />
+        <p>
+          SnapX Photography is a professional website template with 5 different
+          HTML pages for maximum customizations. It is free for commercial
+          usage. This Bootstrap v5.1.3 CSS layout is provided by TemplateMO Free
+          CSS Template
+        </p>
+        <br />
+        <br />
+      </div>
+      <div class="hero-btns">
+        <a href="#" class="btn1">Explore SnapX Contest</a>
+        <a href="#" class="btn2"
+          ><img src="play.jpg" alt="play" width="10px" height="10px" />Watch our
+          Video Now</a
+        >
+      </div>
+      <div class="cards">
+        <div class="card1">
+          <img src="prev.png" alt="prev" width="50px" />
+        </div>
+        <div class="card">
+          <img src="featured-03.jpg" alt="featued3" width="150px" />
+        </div>
+        <div class="card-details">
+          <h2>Walk in Nature</h2>
+          <br />
+          <p>Contest Winner</p>
+          <p>Contest Author</p>
+          <p>Awards</p>
+        </div>
+        <div class="card">
+          <img src="featured-02.jpg" alt="featured2" width="150px" />
+        </div>
+        <div class="card1">
+          <img src="next.png" alt="next" width="50px" />
+        </div>
+      </div>
+    </section>
+    <section class="hero1">
+      <div class="hero-content1">
+        <p>OUR CATEGORIES</p>
+        <h3>Check Out <span>Popular</span> Contest <span>Categories</span></h3>
+      </div>
+      <div class="hero-data">
+        <a href="#">Discover All Categories</a>
+      </div>
+    </section>
+    <section class="hero2">
+    <div class="content1">
+      <div class="hero-content2">
+        <img src="icon-01.png" alt="icon1" width="30px" />
+         <div>
+          <h4>National Pic Contest</h4>
+          <div class="hero-data1">
+            <p>126</p>
+            <span>Available Contests</span>
+          </div>
+        </div>
+        </div>
+        <img src="popular-01.png" alt="popular image" class="image" width="200"><br>
+        <a href="#" class="hero-btn">Browse Nature Pic Contests</a>
+      </div>
+      <div class="content1">
+      <div class="hero-content2">
+        <img src="icon-02.png" alt="icon2" width="30px" />
+         <div>
+          <h4>Random Pic Contest</h4>
+          <div class="hero-data1">
+            <p>116</p>
+            <span>Available Contests</span>
+          </div>
+        </div>
+        </div>
+        <img src="popular-02.png" alt="popular image" class="image" width="200"><br>
+        <a href="#" class="hero-btn">Browse Random Pic Contests</a>
+      </div>
+      <div class="content1">
+      <div class="hero-content2">
+        <img src="icon-03.png" alt="icon3" width="30px" />
+         <div>
+          <h4>Portrait Pic Contest</h4>
+          <div class="hero-data1">
+            <p>164</p>
+            <span>Available Contests</span>
+          </div>
+        </div>
+        </div>
+        <img src="popular-03.png" alt="popular image" class="image" width="200"><br>
+        <a href="#" class="hero-btn">Browse Portrait Pic Contests</a>
+      </div>
+      <div class="content1">
+      <div class="hero-content2">
+        <img src="icon-04.png" alt="icon4" width="30px" />
+         <div>
+          <h4>Space Pic Contest</h4>
+          <div class="hero-data1">
+            <p>164</p>
+            <span>Available Contests</span>
+          </div>
+        </div>
+        </div>
+        <img src="popular-04.png" alt="popular image" class="image" width="200"><br>
+        <a href="#" class="hero-btn">Browse Space Pic Contests</a>
+      </div>
+    </section>
+  </body>
+</html>
